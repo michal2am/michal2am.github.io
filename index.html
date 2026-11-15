@@ -17,7 +17,7 @@
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Michał Adam Michałowski",
-  "honorificPrefix": "dr inż.",
+  "honorificSuffix": "PhD, Eng.",
   "jobTitle": "Assistant Professor",
   "affiliation": {
     "@type": "CollegeOrUniversity",
@@ -88,12 +88,13 @@ h1, h2, h3, nav, .links, .meta, .year, .note { font-family: var(--sans); }
 .site-nav { position: sticky; top: 0; z-index: 20; background: var(--paper); border-bottom: 1px solid var(--rule); font-size: 0.9375rem; }
 .site-nav ul { list-style: none; margin: 0; padding: 0.9rem 0; display: flex; gap: 1.5rem; white-space: nowrap; overflow-x: auto; scrollbar-width: none; }
 .site-nav ul::-webkit-scrollbar { display: none; }
-.site-nav a { color: var(--muted); text-decoration: none; }
+.site-nav a { color: var(--muted); text-decoration: none; font-weight: 600; }
 .site-nav a:hover { color: var(--ink); text-decoration: underline; }
 
 /* ---------- header ---------- */
 .intro { padding: 3.5rem 0 2.5rem; }
 .intro h1 { font-size: clamp(2rem, 5.2vw, 3.1rem); line-height: 1.08; letter-spacing: -0.02em; font-weight: 600; margin: 0 0 0.9rem; }
+.intro h1 .degree { font-size: 0.5em; font-weight: 500; letter-spacing: 0; color: var(--muted); white-space: nowrap; }
 .role { font-family: var(--sans); font-size: 1.0625rem; line-height: 1.45; margin: 0 0 1.4rem; color: var(--muted); }
 .role strong { color: var(--ink); font-weight: 600; }
 .links { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5rem 0.6rem; font-size: 0.9375rem; }
@@ -187,9 +188,9 @@ footer p { margin: 0 0 0.3rem; }
 
 <header class="intro">
   <div>
-    <h1>Michał A. Michałowski</h1>
+    <h1>Michał A. Michałowski<span class="degree">, PhD, Eng.</span></h1>
     <!-- EDIT: position and affiliation -->
-    <p class="role"><strong>dr inż., Assistant Professor</strong><br>
+    <p class="role"><strong>Assistant Professor</strong><br>
       Department of Biomedical Engineering<br>
       Wrocław University of Science and Technology</p>
     <!-- Icons: ORCID uses the official iD icon from icons/orcid.svg (see icons/README.txt).
@@ -322,7 +323,7 @@ footer p { margin: 0 0 0.3rem; }
       <dt>Funding</dt>
       <dd>NCN Maestro (investigator), 2018–2025</dd>
       <dt>Recognition</dt>
-      <dd>Primus 2025 award of Wrocław Medical University for the highest-scored publications; honourable mention in the Jerzy Konorski Award for the best Polish original publication in neurobiology published in 2025 (Polish Neuroscience Society and the Committee of Neurobiology of the Polish Academy of Sciences), 2026; invited talk at the XIX Congress of the Polish Biophysical Society, 2025</dd>
+      <dd>Primus 2025 award of Wrocław Medical University for the highest-scored publications; honourable mention in the Jerzy Konorski Award for the best Polish original publication in neurobiology published in 2025 (Polish Neuroscience Society and the Committee of Neurobiology of the Polish Academy of Sciences); invited talk at the XIX Congress of the Polish Biophysical Society 2025</dd>
       <dt>Papers</dt>
       <dd><a href="https://doi.org/10.1073/pnas.2512278122">PNAS 2025</a>, <a href="https://doi.org/10.1017/S0033583524000179">Q Rev Biophys 2025</a></dd>
     </dl>
@@ -373,7 +374,7 @@ footer p { margin: 0 0 0.3rem; }
     </div>
 
     <div class="course">
-      <h3>Biofizyka (laboratorium i ćwiczenia), semestr zimowy 2026/27</h3>
+      <h3>Biofizyka (laboratorium i ćwiczenia), semestr zimowy 2026/2027</h3>
       <ul class="pages">
         <li><a href="https://mamichalowski.notion.site/niepewnosci-bledy-podsumowanie" target="_blank" rel="noopener">
           <span class="page-title">Niepewności pomiaru i rachunek błędów – podsumowanie</span>
@@ -383,6 +384,17 @@ footer p { margin: 0 0 0.3rem; }
         <li><a href="https://mamichalowski.notion.site/blad-maksymalny-obliczenia" target="_blank" rel="noopener">
           <span class="page-title">Błąd maksymalny stężenia roztworu: metoda logarytmiczna i różniczka zupełna</span>
           <span class="page-desc">Wyprowadzenia krok po kroku dla roztworu z naważki i rozcieńczeń</span>
+          <span class="page-src"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M6 3H3v10h10v-3M9 3h4v4M13 3 7.5 8.5"/></svg>Strona w Notion</span>
+        </a></li>
+      </ul>
+    </div>
+
+    <div class="course">
+      <h3>Informatyka Medyczna (Projekt), semestr zimowy 2026/2027</h3>
+      <ul class="pages">
+        <li><a href="https://mamichalowski.notion.site/podsumowanie-projekt-excel" target="_blank" rel="noopener">
+          <span class="page-title">Podsumowanie Projekt I: Excel</span>
+          <span class="page-desc">Funkcje i operacje Excela z projektu, pojęcia z diagnostyki obrazowej, analiza danych i modele</span>
           <span class="page-src"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M6 3H3v10h10v-3M9 3h4v4M13 3 7.5 8.5"/></svg>Strona w Notion</span>
         </a></li>
       </ul>

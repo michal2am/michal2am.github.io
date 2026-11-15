@@ -8,6 +8,7 @@ Plain HTML, no build step. Everything is in `index.html` (styles included).
 
 - **Position, affiliation, links**: top of `<body>`, marked `EDIT`.
 - **New paper**: copy one `<li>` block to the top of the list in the Publications section. Numbering updates automatically.
+- **Link icons**: ORCID uses the official iD icon from `icons/orcid.svg` (see `icons/README.txt`); the others are generic symbols.
 - **Projects**: each project is one `<article class="project">` block.
 - **Student materials**: copy the commented template in the "For students" section. Files go in `materials/`; live Notion pages are linked as cards (publish the page in Notion first: Share > Publish, then use the public notion.site link).
 
